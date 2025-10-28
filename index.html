@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saravana Industries</title>
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font (Inter) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <title>Saravana Industries - Portfolio</title>
+    <!-- Tailwind CSS for styling --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons --><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -18,18 +15,34 @@
         html {
             scroll-behavior: smooth;
         }
+        /* Custom background for the About section */
+        #about-bg {
+            background-image: url('products.jpg'); /* Your product image */
+            background-size: contain; /* Changed from 'cover' to 'contain' */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+        }
+        /* Overlay to make text readable */
+        .overlay {
+            background-color: rgba(17, 24, 39, 0.7); /* Dark semi-transparent background */
+            min-height: 400px; /* Ensure enough height for the text and image */
+            display: flex; /* Use flexbox for centering content */
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            padding: 2rem; /* Add some padding around the content */
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
 
-    <!-- Header --><header class="bg-gray-800 shadow-lg">
+    <!-- Header --><header class="bg-gray-800 shadow-lg sticky top-0 z-50">
         <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo / Company Name --><a href="#" class="flex items-center text-2xl font-bold text-white">
                     <!-- NEW: Image Logo --><img src="logo.png" alt="Saravana Industries Logo" class="h-10 w-auto mr-3"> 
                     Saravana Industries <!-- Changed from YourBrand --></a>
                 <!-- Navigation --><div class="flex items-center space-x-4">
-                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#about-bg" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                     <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition duration-300">
                         Contact Us
                     </a>
@@ -38,40 +51,29 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 mt-10">
+    <!-- Main Content --><main class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 mt-10">
 
-        <!-- About Us Section -->
-        <section id="about" class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
-            <div class="md:flex">
-                <!-- Image -->
-                <div class="md:w-1/2">
-                    <img class="h-64 w-full object-cover md:h-full" 
-                         src="https://placehold.co/600x400/111827/7C3AED?text=SARAVANA+INDUSTRIES+(SENGRA)" 
-                         alt="A meeting at our company">
-                </div>
-                <!-- Text Content -->
-                <div class="md:w-1/2 p-8 md:p-12">
-                    <h2 class="text-3xl font-bold text-white mb-4">About Our Company</h2>
-                    <p class="text-gray-400 mb-4">
+        <!-- About Us Section --><section id="about-bg" class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
+            <div class="overlay">
+                <!-- Text Content (now takes full width, or split if desired) --><div class="w-full text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">About Saravana Industries</h2>
+                    <p class="text-gray-200 mb-4 mx-auto max-w-2xl">
                         Welcome to Saravana Industries, proudly known as Sengra. We are not just suppliers; we are expert manufacturers with a deep-rooted passion for quality. We specialize in producing all types of high-quality wet grinder stones.
                     </p>
-                    <p class="text-gray-400 mb-4">
+                    <p class="text-gray-200 mb-4 mx-auto max-w-2xl">
                         Our mission is simple: to create the most durable, reliable, and efficient grinding stones on the market. We understand that the stone is the heart of any wet grinder, and our commitment to precision ensures you get the perfect grind, every time.
                     </p>
-                    <p class="text-gray-400">
+                    <p class="text-gray-200 mx-auto max-w-2xl">
                         Founded on a principle of quality and reliability, we have over 20 years of experience in the industry. We control the entire manufacturing process, from sourcing the finest raw materials to final inspection. This is the Sengra guarantee of excellence.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12">
+        <!-- Contact Section --><section id="contact" class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 
-                <!-- Contact Form -->
-                <div>
+                <!-- Contact Form --><div>
                     <h2 class="text-3xl font-bold text-white mb-6">Get in Touch</h2>
                     <p class="text-gray-400 mb-6">Have a project in mind? We'd love to hear from you. Fill out the form, and we'll get back to you as soon as possible.</p>
                     
@@ -79,8 +81,7 @@
                         IMPORTANT: 
                         You MUST replace "YOUR_FORMSPREE_URL_HERE" with your own URL from Formspree.
                         See the hosting guide for instructions!
-                    -->
-                    <form id="contact-form" action="https://formspree.io/f/mdkpevao" method="POST">
+                    --><form id="contact-form" action="https://formspree.io/f/mdkpevao" method="POST">
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
                             <input type="text" name="name" id="name" required class="w-full bg-gray-700/50 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
@@ -102,8 +103,7 @@
                     <div id="form-message" class="text-center mt-4"></div>
                 </div>
 
-                <!-- Contact Details -->
-                <div>
+                <!-- Contact Details --><div>
                     <h2 class="text-3xl font-bold text-white mb-6">Contact Details</h2>
                     <p class="text-gray-400 mb-8">
                         You can also reach us directly at our office or through email.
@@ -113,7 +113,7 @@
                             <i data-lucide="mail" class="w-6 h-6 text-indigo-400 mr-4 flex-shrink-0 mt-1"></i>
                             <div>
                                 <h3 class="text-lg font-semibold text-white">Email</h3>
-                                <a href="mailto:info@yourcompany.com" class="text-gray-400 hover:text-indigo-400">ranjansenthil20020523@gmail.com</a>
+                                <a href="mailto:info@saravanaindustries.com" class="text-gray-400 hover:text-indigo-400">info@saravanaindustries.com</a>
                             </div>
                         </li>
                         <li class="flex items-start">
@@ -138,10 +138,9 @@
 
     </main>
     
-    <!-- Footer -->
-    <footer class="bg-gray-800 mt-20 border-t border-gray-700/50">
+    <!-- Footer --><footer class="bg-gray-800 mt-20 border-t border-gray-700/50">
         <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-500">&copy; 2024 YourBrand. All rights reserved.</p>
+            <p class="text-gray-500">&copy; 2024 Saravana Industries. All rights reserved.</p>
         </div>
     </footer>
 
@@ -153,40 +152,44 @@
         const contactForm = document.getElementById('contact-form');
         const formMessage = document.getElementById('form-message');
     
-        contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const form = e.target;
-            const data = new FormData(form);
-            const action = form.action;
-            
-            try {
-                const response = await fetch(action, {
-                    method: 'POST',
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
+        // We add this check to make sure the elements exist before adding listeners
+        if (contactForm && formMessage) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const form = e.target;
+                const data = new FormData(form);
+                const action = form.action;
+                
+                try {
+                    const response = await fetch(action, {
+                        method: 'POST',
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
 
-                if (response.ok) {
-                    formMessage.textContent = 'Thank you! Your message has been sent.';
-                    formMessage.className = 'text-green-400';
-                    form.reset();
-                } else {
+                    if (response.ok) {
+                        formMessage.textContent = 'Thank you! Your message has been sent.';
+                        formMessage.className = 'text-green-400';
+                        form.reset();
+                    } else {
+                        formMessage.textContent = 'Oops! There was a problem submitting your form.';
+                        formMessage.className = 'text-red-400';
+                    }
+                } catch (error) {
                     formMessage.textContent = 'Oops! There was a problem submitting your form.';
                     formMessage.className = 'text-red-400';
                 }
-            } catch (error) {
-                formMessage.textContent = 'Oops! There was a problem submitting your form.';
-                formMessage.className = 'text-red-400';
-            }
 
-            setTimeout(() => {
-                formMessage.textContent = '';
-            }, 5000);
-        });
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                }, 5000);
+            });
+        }
     </script>
 </body>
 </html>
+
 
