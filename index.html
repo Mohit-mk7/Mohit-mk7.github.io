@@ -41,8 +41,12 @@
                 <!-- Logo / Company Name --><a href="#" class="flex items-center text-2xl font-bold text-white">
                     <!-- NEW: Image Logo --><img src="logo.png" alt="Saravana Industries Logo" class="h-10 w-auto mr-3"> 
                     Saravana Industries <!-- Changed from YourBrand --></a>
-                <!-- Navigation --><div class="flex items-center space-x-4">
+                <!-- Navigation --><div class="flex flex-wrap items-center space-x-4">
                     <a href="#about-bg" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#precision-section" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Precision</a>
+                    <a href="#scale-section" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Scale</a>
+                    <a href="#inventory-section" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inventory</a>
+                    <a href="#action-section" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">In Action</a>
                     <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition duration-300">
                         Contact Us
                     </a>
@@ -65,6 +69,69 @@
                     </p>
                     <p class="text-gray-200 mx-auto max-w-2xl">
                         Founded on a principle of quality and reliability, we have over 20 years of experience in the industry. We control the entire manufacturing process, from sourcing the finest raw materials to final inspection. This is the Sengra guarantee of excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precision at Every Step Section --><section id="precision-section" class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
+            <div class="md:flex md:flex-row-reverse">
+                <!-- Image --><div class="md:w-1/2">
+                    <img class="h-64 w-full object-cover md:h-full" 
+                         src="product2.jpg" 
+                         alt="Precision tools measuring a grinder stone">
+                </div>
+                <!-- Text Content --><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Precision at Every Step</h2>
+                    <p class="text-gray-200 mb-4">
+                        At Saravana Industries, quality is our guarantee. We use precision tools, like the caliper shown here, to meticulously measure every grinder stone. This ensures each stone meets our exact standards for a perfect fit and flawless performance in your machine.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready for Any Order Section --><section id="scale-section" class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
+            <div class="md:flex">
+                <!-- Image --><div class="md:w-1/2">
+                    <img class="h-64 w-full object-cover md:h-full" 
+                         src="product3.jpg" 
+                         alt="Bulk inventory of grinder stones">
+                </div>
+                <!-- Text Content --><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Ready for Any Order, Big or Small</h2>
+                    <p class="text-gray-200 mb-4">
+                        This is what manufacturing at scale looks like. Our facility is equipped to handle bulk orders for distributors, retailers, and other businesses. With a large inventory always ready for dispatch, Saravana Industries is your reliable source for all types of wet grinder stones.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stocked and Ready to Deliver Section --><section id="inventory-section" class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
+            <div class="md:flex"> <!-- Removed md:flex-row-reverse to revert to default text-left, image-right --><!-- Text Content --><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Stocked and Ready to Deliver</h2>
+                    <p class="text-gray-200 mb-4">
+                        We are proud to be a leading manufacturer, not just a supplier. Our extensive inventory, seen here at our production facility, means we are always prepared to meet your demands. This allows us to ensure fast, reliable delivery for all our clients.
+                    </p>
+                </div>
+                <!-- Image --><div class="md:w-1/2">
+                    <img class="h-64 w-full object-cover md:h-full" 
+                         src="product4.jpg" 
+                         alt="Stocked inventory of grinder stones ready for delivery">
+                </div>
+            </div>
+        </section>
+
+        <!-- The Heart of Your Grinder Section (FIXED) --><section id="action-section" class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-12">
+            <div class="md:flex"> <!-- Removed md:flex-row-reverse to swap image and text -->
+                <!-- Image --><div class="md:w-1/2">
+                    <img class="h-64 w-full object-cover md:h-full" 
+                         src="product5.jpg" 
+                         alt="Grinder stones inside a wet grinder">
+                </div>
+                <!-- Text Content --><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">The Heart of Your Grinder</h2>
+                    <p class="text-gray-200 mb-4">
+                        This is where the magic happens. Our high-quality stones are engineered to create the perfect grinding action, crushing ingredients efficiently to produce the smoothest batter. See the precision of our product inside a standard table top wet grinder.
                     </p>
                 </div>
             </div>
@@ -181,7 +248,7 @@
                 } catch (error) {
                     formMessage.textContent = 'Oops! There was a problem submitting your form.';
                     formMessage.className = 'text-red-400';
-                }
+JUL                }
 
                 setTimeout(() => {
                     formMessage.textContent = '';
@@ -191,5 +258,4 @@
     </script>
 </body>
 </html>
-
 
